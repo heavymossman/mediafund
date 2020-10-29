@@ -1,0 +1,28 @@
+@media (min-width: 1500px) {
+    .container {
+        max-width: 1350px;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+    .p-mega {
+        min-height: 50vh;
+        padding: 5rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .p-mega {
+        padding: 3rem;
+    }
+}
+
+.text-overlay {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3rem;
+}
