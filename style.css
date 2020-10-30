@@ -56,7 +56,7 @@ h6,
 
 .text-overlay {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(49, 180, 108, 0.92);
     padding: 3rem;
 }
 
@@ -101,13 +101,20 @@ footer {
 }
 
 .section-margin {
-    margin-top: 8rem!important;
+    margin-top: 4rem!important;
 }
 
 .section-margin-bottom {
-    margin-bottom: 8rem!important;
+    margin-bottom: 4rem!important;
 }
 
 hr.dark {
     border-top: 1px solid rgb(255 255 255 / 20%);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: rgb(49, 179, 98);
 }
