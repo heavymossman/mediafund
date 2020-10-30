@@ -12,6 +12,34 @@ h6,
     font-family: 'Roboto Slab', serif;
 }
 
+
+/* unvisited link */
+
+a:link {
+    color: #31B362;
+}
+
+
+/* visited link */
+
+a:visited {
+    color: #31B362;
+}
+
+
+/* mouse over link */
+
+a:hover {
+    color: #31B362;
+}
+
+
+/* selected link */
+
+a:active {
+    color: #31B362;
+}
+
 @media (min-width: 1500px) {
     .container {
         max-width: 1350px;
@@ -117,4 +145,18 @@ hr.dark {
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .show>.nav-link {
     color: rgb(49, 179, 98);
+}
+
+a.white {
+    color: white;
+}
+
+hr {
+    border-top: 1px solid rgb(33 181 115);
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #e32226;
+    border-color: #e22023;
 }
