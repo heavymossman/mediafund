@@ -12,6 +12,10 @@ h6,
     font-family: 'Roboto Slab', serif;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 
 /* unvisited link */
 
