@@ -1,3 +1,17 @@
+body {
+    font-family: 'Spectral', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-link {
+    font-family: 'Roboto Slab', serif;
+}
+
 @media (min-width: 1500px) {
     .container {
         max-width: 1350px;
@@ -11,7 +25,9 @@
     }
     .p-mega {
         min-height: 50vh;
-        padding: 5rem;
+        padding-top: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
     }
 }
 
@@ -21,8 +37,77 @@
     }
 }
 
+@media (max-width: 700px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    .display-1 {
+        font-size: 2rem;
+    }
+    .navbar-nav {
+        text-align: center;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+    .hide-mobile {
+        display: none;
+    }
+}
+
 .text-overlay {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 3rem;
+}
+
+.navbar {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: whitesmoke;
+}
+
+#donate {
+    background-color: #6231B3;
+    color: white;
+    padding: 3rem;
+}
+
+#social {
+    background-color: #31B362;
+    color: white;
+    padding: 3rem;
+}
+
+#partners {
+    padding: 3rem;
+}
+
+#bywire {
+    padding: 3rem;
+}
+
+#about {
+    padding: 3rem;
+}
+
+.nav-margin {
+    margin-top: 5rem!important;
+}
+
+.jumbotron {
+    padding-top: 4rem;
+}
+
+.section-margin {
+    margin-top: 8rem!important;
+}
+
+.section-margin-bottom {
+    margin-bottom: 8rem!important;
+}
+
+hr.dark {
+    border-top: 1px solid rgb(255 255 255 / 20%);
 }
