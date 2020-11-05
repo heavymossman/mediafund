@@ -182,3 +182,7 @@ p {
 .btn {
     text-transform: uppercase;
 }
+
+.navbar {
+    transition: 0.4s;
+}
