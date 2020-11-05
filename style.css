@@ -101,7 +101,7 @@ footer {
 }
 
 #donate {
-    background-color: #6231B3;
+    background-color: rgba(49, 180, 108, 0.92);
     color: white;
     padding: 3rem;
 }
@@ -161,6 +161,24 @@ hr {
 
 .btn-danger {
     color: #fff;
-    background-color: #e32226;
-    border-color: #e22023;
+    background-color: #e30613e6;
+    border-color: #720008e6;
+}
+
+.btn-white {
+    color: #31B362;
+    background-color: white;
+    border-color: white;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+p {
+    line-height: 1.7;
+}
+
+.btn {
+    text-transform: uppercase;
 }
