@@ -125,6 +125,13 @@ a:active {
     #about {
         padding: 1rem;
     }
+    .btn-block-mobile-only {
+        display: block;
+        width: 100%;
+    }
+    .dropdown-item {
+        font-size: small;
+    }
 }
 
 .text-overlay {
