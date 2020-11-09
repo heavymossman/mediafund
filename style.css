@@ -61,17 +61,39 @@ a:active {
         padding-left: 5rem;
         padding-right: 5rem;
     }
+    .p-5-dk {
+        padding: padding: 3rem!important;
+    }
+    #donate {
+        background-color: rgba(49, 180, 108, 0.92);
+        color: white;
+        padding: 3rem;
+    }
+    #social {
+        background-color: #31B362;
+        color: white;
+        padding: 3rem;
+    }
+    #partners {
+        padding: 3rem;
+    }
+    #bywire {
+        padding: 3rem;
+    }
+    #about {
+        padding: 3rem;
+    }
 }
 
 @media (max-width: 991px) {
     .p-mega {
-        padding: 3rem;
+        padding: 1rem;
     }
 }
 
 @media (max-width: 700px) {
     .display-4 {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
     .display-1 {
         font-size: 2rem;
@@ -83,6 +105,25 @@ a:active {
     }
     .hide-mobile {
         display: none;
+    }
+    .lead {
+        font-size: 1rem;
+        font-weight: 300;
+    }
+    #donate {
+        padding: 1rem;
+    }
+    #social {
+        padding: 1rem;
+    }
+    #partners {
+        padding: 1rem;
+    }
+    #bywire {
+        padding: 1rem;
+    }
+    #about {
+        padding: 1rem;
     }
 }
 
@@ -103,25 +144,11 @@ footer {
 #donate {
     background-color: rgba(49, 180, 108, 0.92);
     color: white;
-    padding: 3rem;
 }
 
 #social {
     background-color: #31B362;
     color: white;
-    padding: 3rem;
-}
-
-#partners {
-    padding: 3rem;
-}
-
-#bywire {
-    padding: 3rem;
-}
-
-#about {
-    padding: 3rem;
 }
 
 .nav-margin {
