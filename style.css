@@ -253,3 +253,7 @@ img.pub:hover {
 .img-space {
     padding: 3rem;
 }
+
+#navb {
+    text-transform: uppercase;
+}
