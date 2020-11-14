@@ -60,9 +60,7 @@
 
                             </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#social">Join</a>
-                        </li>
+
 
                         <li class="nav-item">
                             <a class="nav-link" href="#social" aria-disabled="true">Social</a>
@@ -184,9 +182,9 @@
 
                     </div>
                     <div class="col-md-6 col-sm-12">
-                        <p>The national press, broadcast news and Big Tech are all owned and run by a small elite. They shape the stories we tell ourselves about the world, how we view society and what we do to make it better The Media Fund wants to put
-                            that power back in the hands of ordinary people through independent, trustworthy sources that are free from elite biases and agendas The Media Fund’s partners are those sources - and we fight for them. Though lobbying, campaigning,
-                            marketing, promoting, networking, event organising and raising funds The Media Fund is a cooperative where our partners, workers and donors are all members and get to democratically decide what we do as an organisation. </p>
+                        <p>The national press, broadcast news and 'Big Tech' are all owned and run by a small elite. They shape the stories we tell ourselves about the world, how we view society and what we do to make it better. The Media Fund wants to put
+                            that power back in the hands of ordinary people through independent, trustworthy sources that are free from elite biases and agendas. The Media Fund’s partners are those sources - and we fight for them. Though lobbying, campaigning,
+                            marketing, promoting, networking, event organising and raising funds. The Media Fund is a cooperative where our partners, workers and donors are all members and get to democratically decide what we do as an organisation. </p>
                     </div>
                 </div>
             </div>
@@ -436,12 +434,28 @@
                 <div class="row">
                     <div class="col-md-2"></div>
                     <div class="col-md-8 col-12 ">
-                        <a href="https://bywire.news/" target="_blank"><img src="https://bywire.news/assets/img/v2/bywire-logo.png" class="img-fluid mx-auto d-block"></a>
+                        <a href="https://bywire.news/" target="_blank"><img src="logos/bywire-logo.png" class="img-fluid mx-auto d-block"></a>
 
 
                         <p class="mt-4">Bywire News is a digital platform for creators and publishers to publish unbiased and unconflicted news where readers are placed at the heart of the platform; no data is collected that is not explicitly given. Readers earn a monetary
                             reward (crypto token named Wirebit) each time they consume content; we call this the Universal Basic Rewards (UBR). Readers can either keep this reward or reward it back to the publishers and creators, they can reward more
                             or less than they received and they can use this to fund specific journalistic projects, stories or creators.
+
+                            <div class="row text-center my-5">
+                                <div class="col-md-3 col-12 mt-2">
+                                    <a href="#"><img src="logos/wtl.png" class="mx-auto d-block img-fluid pub" alt="..."></a>
+                                </div>
+                                <div class="col-md-3 col-12 mt-2">
+                                    <a href="#"><img src="logos/ntn.jpg" class="mx-auto d-block img-fluid pub" alt="..."></a>
+                                </div>
+                                <div class="col-md-3 col-12 mt-2">
+                                    <a href="#"><img src="logos/labour-buzz.jpg" class="mx-auto d-block img-fluid pub" alt="..."></a>
+                                </div>
+                                <div class="col-md-3 col-12 mt-2">
+                                    <a href="#"><img src="logos/our-london.jpg" class="mx-auto d-block img-fluid pub" alt="..."></a>
+                                </div>
+                            </div>
+
                             <p>The Bywire decentralised ecosystem contains a series of benefits and unique functionalities which will end dependencies on advertisers and generate a self-sustaining and self-financing news ecosystem. Decentralised, democratic
                                 and governed by its publishers, publisher block producers, creators and by its community. Bywire is building the world's first truly democratic, attributable, independent blockchain secure news network and we would love
                                 you to <a href="https://bywire.news/account/signup" target="_blank">join us</a>.
@@ -470,11 +484,11 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="text-center">Copyright © 2020 <a href="https://themediafund.org/" target="_blank">The Media Fund</a> & <a href="https://bywire.news/" target="_blank">Bywire News</p>
+                        <p class="text-center">Copyright © 2020 <a href="https://themediafund.org/" target="_blank">The Media Fund</a> & <a href="https://bywire.news/" target="_blank">Bywire News</a></p>
+                        <p class="text-center"><a href="#" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up fa-3x"></i></a></p>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 
 
@@ -501,22 +515,56 @@
         $(".jumbotron").backstretch("jumbo-1.jpg");
     </script>
 
-<script>
-    // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
-    window.onscroll = function() {
-        scrollFunction();
-    };
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("logo").style.width = "60%";
-            document.getElementById("navb").style.textTransform = "capitalize";
-        } else {
-            document.getElementById("logo").style.width = "100%";
-            document.getElementById("navb").style.textTransform = "uppercase";
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
         }
-    }
-</script>
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        $('.navbar-nav>li>a').on('click', function() {
+            $('.navbar-collapse').collapse('hide');
+        });
+    </script>
+
+    <script>
+        // When the user scrolls down 80px from the top of the document, resize the navbar's padding and the logo's font size
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                document.getElementById("logo").style.width = "60%";
+                document.getElementById("navb").style.textTransform = "capitalize";
+            } else {
+                document.getElementById("logo").style.width = "100%";
+                document.getElementById("navb").style.textTransform = "uppercase";
+            }
+        }
+    </script>
+
+
 
 </body>
 
