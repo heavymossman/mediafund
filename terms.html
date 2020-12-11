@@ -20,7 +20,7 @@
 
     <header>
 
-        <nav id="navb" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <nav id="navb" class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navb">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img id="logo" src="logo.png" class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,12 +28,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mx-auto" id="#navb">
+                    <ul class="navbar-nav mx-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html#social">Join</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -41,6 +38,7 @@
                         Partners
                     </a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
                                 <a class="dropdown-item" href="#partners">All Partners</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="#">News Aggregator</a>
@@ -62,29 +60,27 @@
 
                             </div>
                         </li>
+
+
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#social" aria-disabled="true">Social</a>
+                            <a class="nav-link" href="#social" aria-disabled="true">Social</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html#bywire" aria-disabled="true">Bywire</a>
+                            <a class="nav-link" href="#bywire" aria-disabled="true">Bywire</a>
                         </li>
                     </ul>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="btn btn-sm btn-success white" href="index.html#donate"><i class="far fa-credit-card"></i> Become a Member / Donate</a>
+                            <a class="btn btn-sm btn-success white" href="#donate"><i class="far fa-credit-card"></i> Become a Member / Donate</a>
                         </li>
                     </ul>
-                    <!--<form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>-->
+
                 </div>
             </div>
         </nav>
 
 
     </header>
-
 
 
 
@@ -181,7 +177,6 @@
 
 
 
-
     <footer class="pt-5">
         <div class="container-fluid ">
             <div class="container">
@@ -193,11 +188,11 @@
                 </div>
                 <div class="row">
                     <div class="col">
-                        <p class="text-center">Copyright © 2020 The Media Fund & Bywire News</p>
+                        <p class="text-center">Copyright © 2020 <a href="https://themediafund.org/" target="_blank">The Media Fund</a> & <a href="https://bywire.news/" target="_blank">Bywire News</a></p>
+                        <p class="text-center"><a href="#" onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up fa-3x"></i></a></p>
                     </div>
                 </div>
             </div>
-        </div>
     </footer>
 
 
@@ -222,6 +217,36 @@
 
     <script>
         $(".jumbotron").backstretch("jumbo-1.jpg");
+    </script>
+
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
+    <script>
+        $('.navbar-nav>li>a').on('click', function() {
+            $('.navbar-collapse').collapse('hide');
+        });
     </script>
 
     <script>
